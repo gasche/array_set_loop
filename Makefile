@@ -13,7 +13,7 @@ MAIN := _build/default/main.exe
 
 .PHONY: test
 test: all
-	@ hyperfine -N --min-runs 30 --warmup 10 \
+	hyperfine -N --min-runs 30 --warmup 10 \
 	  "$(MAIN)" \
 	  "$(MAIN) --unsafe" \
 	  "$(MAIN) --unrolled" \
