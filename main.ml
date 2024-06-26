@@ -34,7 +34,7 @@ let sum v n =
   chrono "  finalization time" (sum v) n
 
 let repetitions =
-  100
+  1000
 
 let benchmark_set n =
   (* Initialization: *)
